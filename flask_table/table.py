@@ -2,7 +2,9 @@
 from __future__ import unicode_literals
 from collections import OrderedDict
 
-from flask import Markup
+# from flask import Markup
+# Flask Markup was deprecated and markupsafe is the new way
+from markupsafe import Markup
 from flask_babel import gettext as _
 
 from .columns import Col
